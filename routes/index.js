@@ -3,6 +3,7 @@ var express = require('express');
 const app = require('../app');
 var router = express.Router();
 const sql = require("../dboperation");
+const PORT = process.env.PORT || 3000;
 
 /* GET home page. */
 // router.get('/', function(req, res, next) {
@@ -28,7 +29,7 @@ router.get('/getdata_withQuery_Job_History', function(req, res, next) {
 });
 
 
-const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
   console.warn(`App listening on http://localhost:${PORT}`);
 });
