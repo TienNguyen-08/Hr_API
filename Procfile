@@ -1,3 +1,3 @@
 web:npm start
-web: node ./index.js
+web: node ./src/index.js
 worker: node server.js
